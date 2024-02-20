@@ -376,6 +376,19 @@ span {
     section {
         padding: 10rem 3% 2rem;
     }
+
+    .skills {
+        padding-bottom: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
     .footer {
         padding: 2rem 3%;
     }
@@ -405,5 +418,58 @@ span {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
+    
+    .home {
+        flex-direction: column;
+    }
+    
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    
+    .home-content he {
+        font-size: 5rem;
+    }
+    
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .skills h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box {
+        width: 100%;
     }
 }
