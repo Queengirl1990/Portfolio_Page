@@ -52,3 +52,24 @@ document.querySelectorAll('header nav a').forEach(link => {
         isMenuOpen = false;
     });
 });
+
+
+/*========= scroll reveal =====*/
+
+ScrollReveal({ 
+    distance: '80px',
+    duration:  2000,
+    delay: 200
+}).reveal('.home-content, .heading', { origin: 'top' })
+  .reveal('.home-image, .skills-container, .portfolio-box, .contact form', { origin: 'bottom' });
+
+
+
+/*========= typed js
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Flutter Developer', 'Grafik Designerin'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+}); =====*/ 
